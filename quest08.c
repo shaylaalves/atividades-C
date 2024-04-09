@@ -1,14 +1,18 @@
-inteiro N <- 51
-real S <- 0
-real a
+#include <stdio.h>
+#include <math.h>
 
-para i de 1 ate n faça
-    S <- S + i + i
-   fimpara
-a <- raiz(32 / S)
+int main() {
+    int N = 51;
+    float S = 0;
+    float a;
 
-escreva("O valor aproximado de a é: ", a)
-fim
+    for (int i = 1; i <= N; i++) {
+        S += i + i;
+    }
+    
+    a = sqrt(32 / S);
 
+    printf("O valor aproximado de a é: %f\n", a);
 
-
+    return 0;
+}
