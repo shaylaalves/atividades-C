@@ -1,7 +1,3 @@
-
-
-08)
-
 inteiro N <- 51
 real S <- 0
 real a
