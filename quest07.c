@@ -1,4 +1,3 @@
-07)
 Algorimto calcular_S 
 
 inteiro <- N
