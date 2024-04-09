@@ -1,19 +1,32 @@
-Algorimto calcular_S 
+#include <stdio.h>
 
-inteiro <- N
-real <- S
+int main() {
+    int N, i;
+    float S;
 
-para i de 1 ate n faça
-	escolha i
-	   caso 3:
-	       S <- S+5
-	   caso 4:
-		S <- S+3
-	   caso 5:
-                S <- S+50
-	   caso contrario S <- S + I
-         fim escolha;
-    fimpara;
+    printf("Digite o valor de N: ");
+    scanf("%d", &N);
+    printf("Digite o valor de S: ");
+    scanf("%f", &S);
 
-       escreva("O valor de S:\n", S);
-	fim
+    for (i = 1; i <= N; i++) {
+        switch (i) {
+            case 3:
+                S += 5;
+                break;
+            case 4:
+                S += 3;
+                break;
+            case 5:
+                S += 50;
+                break;
+            default:
+                S += i;
+                break;
+        }
+    }
+
+    printf("O valor de S: %.2f\n", S);
+
+    return 0;
+}
