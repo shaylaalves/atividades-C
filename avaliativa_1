@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    double popA = 90.0; 
+    double popB = 200.0; 
+    double taxaCrescimentoA = 0.03; 
+    double taxaCrescimentoB = 0.02; 
+    int anos = 0; 
+
+
+    while (popA <= popB) {
+        popA *= (1 + taxaCrescimentoA);
+        popB *= (1 + taxaCrescimentoB);
+        anos++; 
+    }
+
+    printf("A população de A ultrapassa a população de B em %d anos.\n", anos);
+
+    return 0;
+}
+
+
+/*
+A taxa de crescimentp anual da população de um país A é de 30% e suapopulação atual é de 90 milhões de habitantes. O país B possui
+uma taxa de crescimento anual de 200 milhões de habitantes. Desenvolva e implemente um algoritmo que determine a quantidade de anos 
+que leva para a população de A ultrapassar a de B. Lembre-se que a taxa de crescimento é anual, isto é, por exemplo, a população de A 
+aumentou no primeiro ano para A = 90 x (1+0,03) = 92,7 milhões e essaé a nova população do país, sobre a qual deve ser aplicada
+a taxa para o ano seguinte.
+*/
+
+
